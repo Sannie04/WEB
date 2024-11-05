@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+<servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>test.loginServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+</servlet-mapping>
+
+    <servlet>
+        <servlet-name>fixServlet</servlet-name>
+        <servlet-class>test.fixServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>fixServlet</servlet-name>
+        <url-pattern>/fixServlet</url-pattern>
+    </servlet-mapping>
+    
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>500</error-code>
+        <location>/500.jsp</location>
+    </error-page>
+    
+    <error-page>
+        <error-code>405</error-code>
+        <location>/405.jsp</location>
+    </error-page>
+    
+    <error-page>
+        <exception-type>test.expt</exception-type>
+        <location>/404.jsp</location>
+    </error-page>
+    
+    <context-param>
+        <param-name>maxConnections</param-name>
+        <param-value>10</param-value>
+    </context-param>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
