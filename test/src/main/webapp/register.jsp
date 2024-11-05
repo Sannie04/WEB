@@ -17,7 +17,7 @@
         <label for="name">Họ và Tên:</label>
         <input type="text" id="name" name="name" required><br><br>
         
-          <label for="phone">Số Điên Thoại</label>
+      <label for="phone">Số Điên Thoại</label>
         <input type="text" id="phone" name="phone" required><br><br>
          
         
@@ -39,7 +39,7 @@
             <option value="cantho">Cần Thơ</option>
         </select><br><br>
 
-        <!-- Giới Tính -->
+        Giới Tính
         <label>Giới Tính:</label><br>
         <input type="radio" id="male" name="gender" value="male" required>
         <label for="male">Nam</label><br>
@@ -47,18 +47,18 @@
         <label for="female">Nữ</label><br>
          <input type="radio" id="female" name="gender" value="female">
         <label for="female">Khác</label><br><br>
-        <!-- Nghề Nghiệp -->
+        Nghề Nghiệp
         <label for="job">Nghề Nghiệp:</label>
         <input type="text" id="job" name="job"><br><br>
 
-        <!-- Giao Hàng -->
+        Giao Hàng
         <label>Phương Thức Giao Hàng:</label><br>
         <input type="checkbox" id="home" name="delivery" value="home">
         <label for="home">Tại nhà</label><br>
         <input type="checkbox" id="office" name="delivery" value="office">
         <label for="office">Văn phòng</label><br>
         <input type="checkbox" id="other" name="delivery" value="other">
-        <label for="other">Khác</label><br><br>
+        <label for="other">Khác</label><br><br> 
         
         <input type="checkbox"  id="edit" name="edit" value="edit">
         <input type="submit" value="Đăng Ký">

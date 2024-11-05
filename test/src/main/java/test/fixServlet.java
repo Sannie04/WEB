@@ -24,12 +24,12 @@ public class fixServlet extends HttpServlet {
         String name = request.getParameter("name");
         String address = request.getParameter("address");
         String city = request.getParameter("city");
-        String gender = request.getParameter("gender");
-        String job = request.getParameter("job");
-        String phone = request.getParameter("phone"); 
+       String gender = request.getParameter("gender");
+     String job = request.getParameter("job");
+       String phone = request.getParameter("phone"); 
         String dob = request.getParameter("dob"); 
-        String edit = request.getParameter("edit");
-        String[] delivery = request.getParameterValues("delivery");
+      String edit = request.getParameter("edit");
+       String[] delivery = request.getParameterValues("delivery");
 
    
         String maxConnections = getServletContext().getInitParameter("maxConnections");

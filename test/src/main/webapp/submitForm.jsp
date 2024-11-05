@@ -10,11 +10,11 @@
     <h2>Thông Tin Khách Hàng Đã Đăng Ký</h2>
     <p>Email: <%= request.getParameter("email") %></p>
     <p>Họ và Tên: <%= request.getParameter("name") %></p>
-    <p>Ngày Sinh: <%= request.getParameter("dob") %></p>
+     <p>Ngày Sinh: <%= request.getParameter("dob") %></p>
     <p>Địa Chỉ: <%= request.getParameter("address") %></p>
     <p>Thành Phố: <%= request.getParameter("city") %></p>
     <p>Giới Tính: <%= request.getParameter("gender") %></p>
     <p>Nghề Nghiệp: <%= request.getParameter("job") %></p>
-    <p>Phương Thức Giao Hàng: <%= request.getParameter("delivery") %></p>
+    <p>Phương Thức Giao Hàng: <%= request.getParameter("delivery") %></p> 
 </body>
 </html>
